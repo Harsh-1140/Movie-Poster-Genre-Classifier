@@ -30,6 +30,11 @@ Since movie genres heavily correlate with visual themes (e.g., bright, vibrant c
 5. **Model Estimation**:
    * Sparse Logistic Regression trained via **LASSO (L1 Regularization)** with 10-fold cross-validation (`glmnet`) to prevent overfitting on the high-dimensional feature space.
 
+## Results & Performance
+
+* **Training Dataset**: Trained and validated on over **4,000+ scraped movie posters** (US films, post-2000s).
+* **Cross-Validated Accuracy**: **70.16%** ($0.7016$) on held-out validation data.
+* **Regularization & Sparsity**: The 10-fold cross-validated LASSO shrinkage effectively eliminated noisy, collinear visual features while preserving dominant color distributions and edge density signals.
 ---
 
 ## Submission Objects
